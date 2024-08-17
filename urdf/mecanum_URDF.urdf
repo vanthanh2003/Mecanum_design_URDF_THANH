@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="mecanum_URDF">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.0110523167870742 -0.000199362070095356 -0.0896436927536577"
+        rpy="0 0 0" />
+      <mass
+        value="14.766105466843" />
+      <inertia
+        ixx="0.0478266803335489"
+        ixy="4.79304237808907E-06"
+        ixz="4.00816865504538E-05"
+        iyy="0.0542660958376618"
+        iyz="7.90678339527779E-06"
+        izz="0.0816193718808272" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="link_left_forward">
+    <inertial>
+      <origin
+        xyz="-7.84753595439724E-10 1.41441969248035E-09 -0.0292072545462361"
+        rpy="0 0 0" />
+      <mass
+        value="1.10917108784937" />
+      <inertia
+        ixx="0.000927223078117112"
+        ixy="1.28468627592729E-13"
+        ixz="4.87952893947221E-12"
+        iyy="0.000927223078393498"
+        iyz="-9.96902677955687E-12"
+        izz="0.00172934499655469" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_left_forward.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_left_forward.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_forward"
+    type="continuous">
+    <origin
+      xyz="0.18077 0.29498 -0.22718"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_left_forward" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_right_forward">
+    <inertial>
+      <origin
+        xyz="-8.3704421172115E-10 1.37060496285812E-09 0.0292072546655381"
+        rpy="0 0 0" />
+      <mass
+        value="1.10917107609949" />
+      <inertia
+        ixx="0.000927223078609648"
+        ixy="1.79493976552469E-14"
+        ixz="-4.93878305058557E-12"
+        iyy="0.000927223078428478"
+        iyz="9.86661555416725E-12"
+        izz="0.00172934499653752" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_right_forward.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_right_forward.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_forward"
+    type="continuous">
+    <origin
+      xyz="0.18077 -0.29398 -0.22718"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_right_forward" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_left_back">
+    <inertial>
+      <origin
+        xyz="-1.17904619401088E-09 -1.07553166373009E-09 -0.0292072547225125"
+        rpy="0 0 0" />
+      <mass
+        value="1.10917106929171" />
+      <inertia
+        ixx="0.000927223075793099"
+        ixy="-1.99915550249753E-14"
+        ixz="7.19657295166493E-12"
+        iyy="0.000927223075604432"
+        iyz="7.75855956325429E-12"
+        izz="0.00172934499652816" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_left_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_left_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_left_back"
+    type="continuous">
+    <origin
+      xyz="-0.18123 0.29498 -0.22682"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_left_back" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_right_back">
+    <inertial>
+      <origin
+        xyz="-1.16919807169324E-09 -1.24040155924376E-09 0.0292072545618374"
+        rpy="0 0 0" />
+      <mass
+        value="1.10917108966758" />
+      <inertia
+        ixx="0.0009272230779164"
+        ixy="-1.13992453046855E-13"
+        ixz="-7.91657743098668E-12"
+        iyy="0.000927223077768692"
+        iyz="-7.08543232703688E-12"
+        izz="0.00172934499655555" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_right_back.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.752941176470588 0.752941176470588 0.752941176470588 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_right_back.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_right_back"
+    type="continuous">
+    <origin
+      xyz="-0.18123 -0.29398 -0.22682"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_right_back" />
+    <axis
+      xyz="0 0 1" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+  <link
+    name="link_rplidarA1">
+    <inertial>
+      <origin
+        xyz="-0.00747284659122016 -0.0106755718610989 -9.19261110859184E-05"
+        rpy="0 0 0" />
+      <mass
+        value="1.33076913637073" />
+      <inertia
+        ixx="0.000615233464785375"
+        ixy="-0.000158723746797752"
+        ixz="-8.05061480682981E-07"
+        iyy="0.00109783647594002"
+        iyz="3.09082999981703E-06"
+        izz="0.000960697335617255" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_rplidarA1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://mecanum_URDF/meshes/link_rplidarA1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="joint_rplidarA1"
+    type="fixed">
+    <origin
+      xyz="0.014373 0 0.27584"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="link_rplidarA1" />
+    <axis
+      xyz="0 0 0" />
+    <dynamics
+      damping="0.1"
+      friction="0.1" />
+  </joint>
+</robot>
